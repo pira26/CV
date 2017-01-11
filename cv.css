@@ -1,0 +1,257 @@
+@font-face {
+  font-family: Lombok;
+  src: url(Lombok.otf);
+}
+
+@font-face {
+  font-family: AquaticoRegular;
+  src: url(AquaticoRegular.otf);
+}
+
+/* ****************************************** BODY ********************************************** */
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: AquaticoRegular;
+}
+
+/* ****************************************** HEADER ******************************************** */
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-image: radial-gradient(#3B9CFF, #1C79D7);
+  letter-spacing: 1px;
+  opacity: 0.5;
+}
+
+                                       /* ******************* */
+                                       /* ***** ADDRESS ***** */
+                                       /* ******************* */
+
+p {
+  font-size: 18px;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+
+header h1 {
+  font-size: 35px;
+  margin-top: 80px;
+  font-family: Lombok;
+}
+
+                                       /* ******************* */
+                                       /* ****** IMAGE ****** */
+                                       /* ******************* */
+
+img {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+                                       /* ******************* */
+                                       /* ***** CONTACT ***** */
+                                       /* ******************* */
+
+#footerMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-image: radial-gradient(#3B9CFF, #1C79D7);
+  opacity: 0.5;
+  padding: 20px 0 20px 0; 
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  background-color: white;
+  color: #1C79D7;
+}
+
+/* ****************************************** CONTENT ******************************************* */
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin-left: 10%;
+  background-image: linear-gradient(#DE685E, #DE5247);
+}
+
+h1 {
+  font-family: Lombok;
+  margin-top: 50px;
+}
+
+                                       /* ******************* */
+                                       /* *** COMPETENCES *** */
+                                       /* ******************* */
+
+.circle {
+  width: 100px;
+  margin: 6px 6px 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.circle canvas {
+  vertical-align: top;
+}
+
+.circle strong {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.circle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.circle span {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+
+                                       /* ****************** */
+                                       /* *** BACKGROUND *** */
+                                       /* ****************** */
+
+#background {
+  margin-top: 50px;
+}
+
+li {
+  line-height: 1.4;
+  padding: 5px;
+}
+
+#dev {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#experiences{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+/* ****************************************** FOOTER ******************************************** */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-image: radial-gradient(#3B9CFF, #1C79D7);
+  opacity: 0.5;
+  height: 100px;
+}
+
+footer p {
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+
+footer p:hover {
+  background-color: white;
+  color: #1C79D7;
+}
+
+/* ****************************************** MEDIA QUERY *************************************** */
+
+
+                                       /* ***************** */
+                                       /* **** TABLETS **** */
+                                       /* ***************** */
+
+@media screen and (max-width: 745px){
+  
+  header {
+    display: flex;
+    flex-direction: column;    
+  }
+
+  #container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #dev {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #experiences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+} 
+
+                                       /* ****************** */
+                                       /* ***** PHONES ***** */
+                                       /* ****************** */
+
+@media screen and (max-width: 357px){
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(#3B9CFF, #1C79D7);
+  }
+
+  header h1 {
+    padding-left: 55px;
+  }
+
+  #container {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #dev,
+  #expericences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+  }
+}
