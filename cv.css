@@ -29,13 +29,13 @@ header {
   opacity: 0.5;
 }
 
-                                       /* ******************* */
-                                       /* ***** ADDRESS ***** */
-                                       /* ******************* */
+                                       /* ****************** */
+                                       /* ** AVAILABILITY ** */
+                                       /* ****************** */
 
-p {
-  font-size: 18px;
+#availability {
   margin-top: 60px;
+  font-size: 18px;
   margin-left: 20px;
 }
 
